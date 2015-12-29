@@ -170,6 +170,7 @@ $(function() {
             for (var i = 0; i < markers.length; i++) {
                 if (markers[i].title == this.title) {
                     self.bounceMarker(markers[i]);
+                    self.openInfoWindow(map, markers[i], markers[i].title);
                 }
             }
         };
