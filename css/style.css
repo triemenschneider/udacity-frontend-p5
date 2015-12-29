@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* for google-maps */
+html, body {
+	height: 100%; margin: 0; padding: 0;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.box {
+	position: relative;
+	z-index: 1;
+	margin: 60px 40px;
+	max-width: 300px;
+}
+
+.box .panel {
+	box-shadow: 2px 2px 3px gray;
+}
+
+.box ul {
+	margin: 10px 5px;
+}
+
+.box ul li {
+	margin-bottom: 4px;
+	margin-left: 15px;
+}
+
+
+
+.box ul li:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.box ul li:hover a {
+	font-weight: normal;
+}
+
+.box ul li span.active {
+	font-weight: bold;
+}
+
+.box  small {
+	margin-top: 10px;
+	display: block;
+	color: gray;
+}
+
+.box  small.clickable:hover {
+	cursor: pointer;
+	color: black;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+	.slideToggle {
+		display: block !important;
+		float: right;
+		padding: 2px 5px;
+		margin: -4px 0;
+	}
+	.box {
+		margin-left: 10px;
+	}
+}
